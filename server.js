@@ -22,6 +22,11 @@ const routes = require("./controllers/burgers_controllers.js");
 
 
 app.use("/", routes);
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}...`);
+
+const db = require('./models')
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}...`);
+  })
 });
+

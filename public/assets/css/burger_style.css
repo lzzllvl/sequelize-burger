@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  background-color: gray;
+}
+
+.list-group-item {
+    height: 50px;
+    background-color: darkgray;
+}
+
+.list-group-item.disabled {
+  background-color: lightgray;
+}
+
+
+.names {
+  float: left;
+}
+
+.interact {
+  float: right;
+}
+
+form {
+  display: inline;
+}
+
+.jumbotron {
+  background-color: darkgray;
+  color: white;
+}
